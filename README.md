@@ -3,10 +3,18 @@
 ![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white)
 ![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase&logoColor=white)
+![Gemini](https://img.shields.io/badge/Gemini-8E75C2?style=for-the-badge&logo=googlegemini&logoColor=white)
 
 CafeSea is a modern Android application built with **Kotlin** and **Firebase** that allows users to browse a cafe menu, manage a cart, and place orders seamlessly.
 
 ---
+
+## 🤖 AI Collaboration
+This project was developed with the assistance of **Gemini AI**. By utilizing AI tools, I was able to:
+* **Accelerate Development:** Quickly generate boilerplate code for Firebase models and ViewBinding.
+* **Problem Solving:** Debug complex UPI Intent payment flows and Android 11+ visibility issues.
+* **UI/UX Optimization:** Refine the Shimmer loading effects and XML layouts for better responsiveness.
+* **Documentation:** Generate comprehensive README documentation and technical specifications.
 
 ## ✨ Features
 * **Real-time Menu:** Fetches food items and categories directly from Firebase Realtime Database.
@@ -46,13 +54,11 @@ CafeSea is a modern Android application built with **Kotlin** and **Firebase** t
 ## 🧠 Technical Challenges & Solutions
 * **UPI Intent Integration:** Implemented deep-linking to interact with external payment apps. Handled Android 11+ package visibility requirements by adding proper `<queries>` in the Manifest.
 * **Real-time Synchronization:** Used Firebase `ValueEventListener` to ensure that item quantity changes in the cart instantly reflect in the final price calculation.
-* **UI Polish:** Integrated **ShimmerFrameLayout** to provide a smooth user experience while data is being fetched from the cloud.
 
 ## 🚀 How to Run
 1. Clone this repository.
 2. Add your `google-services.json` file from Firebase to the `app/` folder.
 3. Enable **Realtime Database** and **Email Auth** in your Firebase console.
-4. Run the app on a physical Android device to test UPI payments.
 
 ---
 Developed by **Ved Narayan Kini**
