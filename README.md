@@ -35,8 +35,10 @@ This project was developed with the assistance of **Gemini AI**. By utilizing AI
 
 ## 📸 Preview
 
-> **Note:** Add a link to your APK here so recruiters can test it!
+> **Note:** Intall APP HERE-->
 > [Download the Latest APK](https://drive.google.com/file/d/1mGp5GRurkS39mf1f3t4YwXUTLJ-VChPR/view?usp=drive_link)
+>
+> **Note:** APP Video-->
 > [App video](https://drive.google.com/file/d/1_Yj5tgsqmNxvKXUSppRCftFhDjn20USz/view?usp=drive_link)
 
 ---
