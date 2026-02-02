@@ -1,6 +1,12 @@
 # CafeSea - Food Delivery App 🍔☕
 
+![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white)
+![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
+![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase&logoColor=white)
+
 CafeSea is a modern Android application built with **Kotlin** and **Firebase** that allows users to browse a cafe menu, manage a cart, and place orders seamlessly.
+
+---
 
 ## ✨ Features
 * **Real-time Menu:** Fetches food items and categories directly from Firebase Realtime Database.
@@ -8,32 +14,39 @@ CafeSea is a modern Android application built with **Kotlin** and **Firebase** t
 * **Hybrid Payments:** * **Cash on Delivery (COD):** Fast one-tap checkout.
     * **Online Payment:** Integrated **UPI Intent** (GPay, Paytm, etc.) with automatic order placement upon success.
 * **Shimmer Loading:** Professional skeleton screens to show loading states.
-* **Profile Management:** Stores user address and contact details in Firebase.
+* **Profile Management:** Stores user address, order history, and contact details.
 
 ## 🛠️ Tech Stack
 * **Language:** Kotlin
 * **Database:** Firebase Realtime Database
 * **Auth:** Firebase Authentication
-* **UI:** Material Design 3, XML, Shimmer Effect
+* **UI:** Material Design 3, XML, Facebook Shimmer Effect
 * **Image Loading:** Glide
+
+---
 
 ## 📸 Screenshots
 
 ### 🛒 Ordering Flow
 | Login | Home Screen | My Favourite | My Cart | Payment |
 | :---: | :---: | :---: | :---: | :---: |
-| ![Login](https://github.com/user-attachments/assets/a25dc625-3ce5-412d-8846-470d6951c2b5) | ![Home](https://github.com/user-attachments/assets/8e86b941-07cf-42fd-bde5-5d0392775afa) | ![Fav](https://github.com/user-attachments/assets/2b312cee-17af-4e38-8ae3-ee5fbd07d22d) | ![Cart](https://github.com/user-attachments/assets/00bb0e57-16c3-4c86-9a84-1d54d8dcfa35) | ![Pay](https://github.com/user-attachments/assets/49ef815c-1180-48b3-83d5-b37dd4fbe1c8) |
+| ![Login](https://github.com/user-attachments/assets/c6437680-6297-4b0a-9022-9611af3c9f3b) | ![Home](https://github.com/user-attachments/assets/75eef807-0392-4679-ba82-8e1217f48ab5) | ![Fav](https://github.com/user-attachments/assets/3503a889-3f3d-4e7c-b0df-eec44a667689) | ![Cart](https://github.com/user-attachments/assets/d723fe53-f029-4e35-85af-a4d4cfc67237) | ![Pay](https://github.com/user-attachments/assets/38ec42e1-b4c8-4165-9ef4-32a6b9db6c3e) |
 
 ### 👤 Profile & Support
 | Profile | Edit Profile | Address | My Orders | Feedback |
 | :---: | :---: | :---: | :---: | :---: |
-| ![Profile](https://github.com/user-attachments/assets/86498df4-7490-473f-8d37-a9f13cf1c849) | ![Edit](https://github.com/user-attachments/assets/0ba600f9-fd67-4ac0-9608-f98a78c4cedf) | ![Address](https://github.com/user-attachments/assets/93f95eb1-1e99-4f6e-a888-ca6b3544a20e) | ![Orders](https://github.com/user-attachments/assets/942d1bb5-32ec-4f04-99d2-25a65005f60a) | ![Feed](https://github.com/user-attachments/assets/7c9ddb7d-308f-41e6-9f01-360fb4115aa2) |
+| ![Profile](https://github.com/user-attachments/assets/7e1834ba-89f2-4153-bf39-0754648bd503) | ![Edit](https://github.com/user-attachments/assets/22639659-ed3a-4fcc-9a86-67431fdea2a9) | ![Address](https://github.com/user-attachments/assets/65359c23-3004-497b-90ad-907a9a4e3194) | ![Orders](https://github.com/user-attachments/assets/8176ac45-0a02-4ab7-ac5c-6eff1469df82) | ![Feed](https://github.com/user-attachments/assets/70910d17-8eeb-4a9a-89f0-cc52541ee34a) |
 
 | Support | Settings |
 | :---: | :---: |
-| ![Support](https://github.com/user-attachments/assets/2ed66e05-c86a-4747-b2f7-6980b43f0758) | ![Settings](https://github.com/user-attachments/assets/3ba75cde-aa87-45a4-a6f9-b424a64cccca) |
+| ![Support](https://github.com/user-attachments/assets/2f7249d1-d794-45bd-b660-d2fcabf43abb) | ![Settings](https://github.com/user-attachments/assets/3c8a6c99-96b6-44ef-a4da-1a1e922b01f6) |
 
 ---
+
+## 🧠 Technical Challenges & Solutions
+* **UPI Intent Integration:** Implemented deep-linking to interact with external payment apps. Handled Android 11+ package visibility requirements by adding proper `<queries>` in the Manifest.
+* **Real-time Synchronization:** Used Firebase `ValueEventListener` to ensure that item quantity changes in the cart instantly reflect in the final price calculation.
+* **UI Polish:** Integrated **ShimmerFrameLayout** to provide a smooth user experience while data is being fetched from the cloud.
 
 ## 🚀 How to Run
 1. Clone this repository.
